@@ -7,7 +7,7 @@ const GoalInput = ({goalHandler, isOpen, setIsOpen}) => {
     <Modal visible={isOpen} animationType="slide">
       <View style={styles.inputContainer}>
         <Image style={styles.images} source={require('../assets/goal.png')}/>
-          <TextInput style={styles.textInput} placeholder='Your Goal!'  placeholderTextColor="#fff" onChangeText={e => setText(e)} value={text} />
+          <TextInput style={styles.textInput} placeholder='Your Goal!'  placeholderTextColor="#ccc" onChangeText={e => setText(e)} value={text} />
         <View style={styles.buttonsGroup}>
           <View style={styles.button}>
               <Button title='Add Goal' onPress={() => {
@@ -17,7 +17,7 @@ const GoalInput = ({goalHandler, isOpen, setIsOpen}) => {
               }} />
           </View>
           <View style={styles.button}>
-            <Button title="Cancel" onPress={() => setIsOpen(false)}/>
+            <Button title="Cancel" color='#ef233c' onPress={() => setIsOpen(false)}/>
           </View>
           </View>
           </View>
